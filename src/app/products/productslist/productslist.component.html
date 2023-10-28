@@ -1,1 +1,7 @@
-<p>productslist works!</p>
+<div class="container">
+  <div
+    *ngFor="let product of products"
+    class="row">
+    <h4>{{product.name}}</h4>
+  </div>
+</div>
