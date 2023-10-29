@@ -15,4 +15,8 @@ export class ProductsService {
   getAllProducts(){
     return of(this.data) // of daje nam Observable kolekcje
   }
+
+  getProduct(id: number) {
+    return of(this.data.find(x => x.id == id));
+  }
 }
